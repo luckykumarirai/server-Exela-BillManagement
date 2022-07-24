@@ -30,10 +30,6 @@ app.use('/',editbill);
 app.use('/',deletebill);
 app.use('/',getbill);
 
-app.get("/",(req, res)=>{
-    res.send("Welcome to Server");
-});
-
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, ()=>{
